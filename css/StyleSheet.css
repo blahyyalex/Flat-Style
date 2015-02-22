@@ -356,36 +356,67 @@
          .main .img_port .port_8:hover{
             background:url(../images/port_h.png) no-repeat;
         }
-         /*slider*/
-         .main .theme-default #slider {
+         /* CONTENT SLIDER */
+        #content-slider {
+	        width:940px;
+	        height:498px;
+
+        }
+        /* SLIDER */
+        #slider { 
             float:left;
-            margin:10px auto;
-            width:1700px !important; /* Make sure your images are the same size */
-            height:335px; /* Make sure your images are the same size */
+	        height:335px;
+	        width:1700px;
+	        overflow:visible;
+	        position:relative;          
         }
-        .theme-pascal.slider-wrapper,
-        .theme-orman.slider-wrapper {
-            margin-top:50px;
+        #mask {
+	        overflow:hidden;
+	        height:335px;
+           
         }
-        #slider .first_slide{
-            width:1700px;
-            height:335px;
-            background:url(../images/slider_fon_h.png) no-repeat;
+        #slider ul {
+	        margin:0;
+	        padding:0;
+	        position:relative;
         }
-        #slider .author_photo{           
-            margin:0px auto;           
-            width:80px;
-            height:80px;
-            background:url(../images/author_photo.png) no-repeat;
+        #slider li {
+	        height:335px;
+	        width:1700px;
+	        position:absolute;
+	        list-style:none;
         }
-        #slider .text_slider{
-             margin:0px auto;
-             text-align:center;
-             color:#fff;
+        #slider li.firstanimation {
+	        -moz-animation:cycle 25s linear infinite;	
+	        -webkit-animation:cycle 25s linear infinite;		
         }
-         #slider .text_slider > h2{
-             font-size:25px;
-         }
+        #slider li.secondanimation {
+	        -moz-animation:cycletwo 25s linear infinite;
+	        -webkit-animation:cycletwo 25s linear infinite;		
+        }
+        #slider li.thirdanimation {
+	        -moz-animation:cyclethree 25s linear infinite;
+	        -webkit-animation:cyclethree 25s linear infinite;		
+        }
+        #slider li.fourthanimation {
+	        -moz-animation:cyclefour 25s linear infinite;
+	        -webkit-animation:cyclefour 25s linear infinite;		
+        }
+        #slider li.fifthanimation {
+	        -moz-animation:cyclefive 25s linear infinite;
+	        -webkit-animation:cyclefive 25s linear infinite;		
+        }
+       
+        /* PROGRESS BAR */
+        .progress-bar { 
+	        position:relative;
+	        top:-10px;
+            margin:0 auto;
+	        width:1700px !important; 
+	        height:5px;
+	        -moz-animation:fullexpand 25s ease-out infinite;
+	        -webkit-animation:fullexpand 25s ease-out infinite;
+        }
         .main .content_foot{
             float:left;           
             width:100%;         
