@@ -53,17 +53,20 @@
              color:#E74C3C;
          }
          .header .baner .baner_center .learn_more{
-             background:url(../images/right.png)  130px 18px  no-repeat;
+             background:url(../images/right.png)  130px 20px  no-repeat;
              border: 1px solid #fff;
              color:#fff;
              font-size:20px;
-             width:165px;
-             height:50px;
+             width:155px;
+             height:30px;
              border-radius:5px;
              text-align:left;
              margin-left:220px;
              margin-top:20px;
              font-size:20px;
+             float:left;
+             text-decoration:none;
+             padding:10px 5px;
          }
          .header .baner .baner_center .learn_more:hover{        
              border:1px solid #E74C3C;
